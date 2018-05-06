@@ -1,0 +1,7 @@
+﻿Enable-Migrations -ContextTypeName MyDBContext -MigrationsDirectory Migrations\Test
+
+
+add-migration -ConfigurationTypeName WebApplication1.Migrations.Test.Configuration "InitialCreate" 
+
+
+update-database -ConfigurationTypeName WebApplication1.Migrations.Test.Configuration
